@@ -502,6 +502,54 @@ html {
 .portafolio .galeria .proyecto .overlay:hover h3 {
   margin-bottom: 0;
 }
+footer {
+  background: #252A2E;
+  color: #fff;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+footer .arriba {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #e49337;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 1.125rem;
+}
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+}
+.contacto {
+  display: block;
+  justify-content: center;
+  padding: 0.625rem;
+  background: #e49337;
+  border-radius: 30px 30px 30px 30px;
+  width: fit-content;
+  height: fit-content;
+}
+.contacto a {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
 
 /*seccion reveal*/
 .reveal {
@@ -516,14 +564,15 @@ html {
 }
 /*SECCION RESPONSIVA*/
 @media screen and (max-width: 990px) {
-  .container,.container2 {
+  .container,.container2,.grid-content {
       grid-template-columns: repeat(2, 1fr);
       padding: 2rem 50px;
   }
   }
   @media screen and (max-width: 650px) {
-  .container, .container2 {
+  .container, .container2, .grid-content{
       grid-template-columns: 1fr;
+      padding: 16px;
   }
 }
 @media screen and (max-width: 990px) {
@@ -563,6 +612,5 @@ html {
   .sobremi .fila .col {
     width: fit-content;
   }
-  .sk
 }
 
